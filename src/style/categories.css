@@ -1,0 +1,44 @@
+@media screen {
+.category-c {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-wrapper {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.category-wrapper span {
+    font-size: .8rem;
+}
+.category-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 360%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) { 
+    .category-c {
+        width: 50%;
+   
+      }
+
+      .category-wrapper span {
+        font-size: 1rem;
+    }
+    .category-img {
+        height: 100px;
+        width: 100px;
+      }
+}

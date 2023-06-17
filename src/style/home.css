@@ -1,0 +1,31 @@
+@media screen {
+    .home-container {
+        height: 100%;
+        padding: 10px;
+    }
+
+    .home-searchbar {
+        width: 90%;
+        bottom: 12px;
+        position: relative;
+    }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+    .home-container {
+
+        padding-bottom: 0;
+        
+    }
+
+    
+    .home-searchbar {
+        top: 25px;
+        width: 80%;
+        position: relative;
+    }
+
+}
+

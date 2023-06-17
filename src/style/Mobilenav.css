@@ -1,0 +1,61 @@
+@media screen {
+  .mobile-container {
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    justify-content: space-around;
+    box-shadow: var( --show-shadow);
+    background-color: var(--light-color);
+  }
+
+  .mobile-link {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-link span {
+    display: none;
+    font-size: .6rem;
+  }
+
+  .mobile-link:hover span {
+    display: flex;
+    color: var(--primary-color);
+  }
+
+  .mobile-icon {
+    height: 20px;
+    width:20px;
+    fill: var(--dark-color);
+  }
+
+  .mobile-link:hover  .mobile-icon {
+    fill: var(--primary-color);
+
+  }
+
+  .mobile-link.router-link-active .mobile-icon {
+    fill: var(--primary-color);
+
+  }
+
+  
+  .mobile-link.router-link-active span {
+    display: flex;
+    color: var(--primary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+    .mobile-container { 
+        display: none;
+    }
+}

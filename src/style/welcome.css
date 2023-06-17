@@ -1,0 +1,79 @@
+@media screen {
+  .welcome-container {
+    height: 100%;
+    display: flex;
+    background-color: var(--background-color);
+  }
+
+  .welcome-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .auth-wrapper {
+    display: none;
+  }
+
+  .mobile-show {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid saddlebrown;
+
+  }
+
+  .ads-txt-x {
+    position: fixed;
+    display: flex;
+    top: 10px;
+  }
+
+  .ads-txt-x h1 {
+    width: 80%;
+    padding: 10px;
+    font-size: 2rem;
+    color: var(--background-color);
+  }
+
+  .welcome-btn-container {
+    display: flex;
+    width: 80%;
+    position: fixed;
+    bottom: 20px;
+  }
+
+  .welcome-btn {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .welcome-wrapper {
+    flex: 50%;
+  }
+
+  .ads-txt-x {
+    display: none;
+  }
+
+  .auth-wrapper {
+    flex: 50%;
+    display: flex;
+  }
+
+  .mobile-show,
+  .pop-w {
+    display: none;
+  }
+}

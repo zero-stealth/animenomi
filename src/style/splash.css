@@ -1,0 +1,19 @@
+@media screen {
+    .splash {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--background-color);
+        background-color: var(--primary-color);
+      }
+      
+      .loading {
+        height: fit-content;
+        width: 20%;
+        fill: var(--background-color);
+      }
+      
+}
+

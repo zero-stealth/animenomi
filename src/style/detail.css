@@ -1,0 +1,41 @@
+@media screen {
+.btn-co {
+  display: flex;
+}
+
+
+.cod-btn {
+  display: none;
+
+}
+
+.cart-like {
+  fill: var(--secondary-color);
+}
+
+.btn-cod {
+  display: flex; 
+}
+.btn-co-d {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+}
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .cod-btn {
+    display: flex;
+  }
+  .btn-cod {
+    display: none;
+  }
+}

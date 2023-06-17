@@ -1,0 +1,12 @@
+.trending-card {
+    gap: 30px;
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+.trending-c {
+    min-height: 200px;
+    min-width: 250px;
+}
+

@@ -1,0 +1,61 @@
+@media screen {
+    .extra-container {
+        gap: 15px;
+        display: flex;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .extra-card {
+        gap: 10px;
+        width: 120px;
+        height: 100px;
+        display: flex;
+        cursor: pointer;
+        border-radius: 6px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--background-color);
+    }
+
+    .extra-icon {
+        height: 28px;
+        width: 28px;
+        fill: var(--primary-color);
+    }
+
+    .extra-card span {
+        text-align: center;
+        font-size: .7rem;
+    }
+  }
+  
+  /* using it as global style for larger devices  */
+  @media only screen and (min-width: 48em) {
+    .extra-container {
+        height: 40%;
+    }
+
+    
+    .extra-icon {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .extra-card {
+        gap: 20px;
+        width: 180px;
+        height: 150px;
+    }
+
+    .extra-card span {
+        text-align: center;
+        font-size: .9rem;
+    }
+
+  }
+  

@@ -1,0 +1,75 @@
+@media screen {
+  .desk-container {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .img-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .desk-f1 {
+    display: none;
+  }
+
+  .desk-f {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatar-img {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-notification {
+    height: 30px;
+    width: 30px;
+    fill: var(--primary-color);
+  }
+
+  .notification-tag {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .desk-container {
+    justify-content: space-between;
+  }
+
+  .img-avatar {
+    border: 4px var(--primary-color);
+  }
+
+  .desk-f1 {
+    gap: 20px;
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
+  .nav-link.router-link-active {
+    color: var(--primary-color);
+  }
+}

@@ -1,0 +1,140 @@
+@media screen {
+  .main-mpesa {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .m-image,
+  .mpesa-py {
+    flex: 50%;
+  }
+
+  .m-image {
+    display: none;
+  }
+
+  .mpesa-py {
+    gap: 50px;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .py-title {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .py-title h1 {
+    display: none;
+  }
+
+  .py-title p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .payment-type {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mpesa-logo {
+    width: 100px;
+  }
+
+  .f-controller {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-container {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-container label {
+    font-size: 1rem;
+  }
+
+  .f-input {
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--dark-color);
+  }
+
+  .f-input::placeholder {
+    color: var(--icon-color);
+  }
+
+  .f-input:hover {
+    border: 2px solid var(--primary-color);
+  }
+
+  .btn-py {
+    outline: none;
+    border: none;
+    color: var(--background-color);
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+  }
+
+  .btn-wp {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .btn-wp a {
+    font: 1rem;
+    cursor: pointer;
+}
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .main-mpesa {
+    flex-direction: row;
+  }
+
+  .pay-simp {
+    display: none;
+  }
+  .py-title h1 {
+    margin: 0;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .m-image {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .py-title p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .mpesa-py {
+    padding: 0 50px;
+    justify-content: center;
+  }
+}
+
